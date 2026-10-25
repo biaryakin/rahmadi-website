@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="container">
+  <article class="single-post">
+
+    <h1 class="post-title">{{ .Title }}</h1>
+    <div class="post-meta">
+      {{ if eq .Section "garapan" }}
+        <span class="badge badge-jenis">{{ upper .Params.jenis }}</span>
+        <span class="badge badge-status badge-{{ .Params.status }}">{{ upper .Params.status }}</span>
+        <span class="garapan-updated" style="margin-left: 0.5rem;">· {{ $id := dict "January" "Januari" "February" "Februari" "March" "Maret" "April" "April" "May" "Mei" "June" "Juni" "July" "Juli" "August" "Agustus" "September" "September" "October" "Oktober" "November" "November" "December" "Desember" }}
+<span class="garapan-updated"> Diperbarui {{ .Date.Day }} {{ index $id (.Date.Format "January") }} {{ .Date.Year }}</span>
+      {{ else }}
+        {{ $id := dict "January" "Januari" "February" "Februari" "March" "Maret" "April" "April" "May" "Mei" "June" "Juni" "July" "Juli" "August" "Agustus" "September" "September" "October" "Oktober" "November" "November" "December" "Desember" }}
+<span class="garapan-updated">{{ .Date.Day }} {{ index $id (.Date.Format "January") }} {{ .Date.Year }}</span>
+      {{ end }}
+    </div>
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+  </article>
+</div>
+{{ end }}

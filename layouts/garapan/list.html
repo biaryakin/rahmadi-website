@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="container">
+
+  <div class="page-header">
+    <h1>{{ .Title }}</h1>
+  </div>
+
+  {{ $statusOrder := slice "aktif" "berjalan" "eksperimen" "jeda" "selesai" "ditinggalkan" }}
+
+  {{ range $statusOrder }}
+    {{ $currentStatus := . }}
+    {{ $items := where $.Pages "Params.status" $currentStatus }}
+    {{ if $items }}
+
+    <div class="garapan-grup">
+      <span class="garapan-grup-label">{{ upper $currentStatus }}</span>
+      {{ range $items }}
+      <a href="{{ .Permalink }}" class="garapan-item">
+        <div class="garapan-header">
+          <span class="garapan-title">{{ .Title }}</span>
+          <span class="garapan-badges">
+            <span class="badge badge-jenis">{{ upper .Params.jenis }}</span>
+            <span class="badge badge-status badge-{{ .Params.status }}">{{ upper .Params.status }}</span>
+          </span>
+        </div>
+        {{ with .Params.description }}
+        <p class="garapan-desc">{{ . }}</p>
+        {{ end }}
+        {{ $id := dict "January" "Januari" "February" "Februari" "March" "Maret" "April" "April" "May" "Mei" "June" "Juni" "July" "Juli" "August" "Agustus" "September" "September" "October" "Oktober" "November" "November" "December" "Desember" }}
+<span class="garapan-updated">Diperbarui {{ .Date.Day }} {{ index $id (.Date.Format "January") }} {{ .Date.Year }}</span>
+      </a>
+      {{ end }}
+    </div>
+
+    {{ end }}
+  {{ end }}
+
+</div>
+{{ end }}

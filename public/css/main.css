@@ -1,0 +1,753 @@
+/* ===========================
+   RESET & BASE
+=========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #12100e;
+  color: #f5f0e8;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  color: #7ecaa0;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+.nav-logo {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f5f0e8;
+  letter-spacing: -0.01em;
+}
+
+.nav-logo:hover {
+  opacity: 0.7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  color: #a09a90;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #f5f0e8;
+  opacity: 1;
+}
+
+/* ===========================
+   SITE HEADER & PROFILE HERO
+=========================== */
+.site-header {
+  padding: 3rem 0 0;
+}
+
+.profile-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #1e1b18;
+}
+
+.profile-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  color: #f5f0e8;
+  margin-bottom: 0.75rem;
+}
+
+.profile-link:hover {
+  opacity: 0.8;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #2a2520;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #f5f0e8;
+}
+
+.profile-desc {
+  font-size: 0.825rem;
+  font-style: italic;
+  color: #6a6460;
+  max-width: 400px;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.hero-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-nav a {
+  font-size: 1rem;
+  color: #5eac8d;
+  transition: color 0.2s;
+}
+
+.hero-nav a:hover {
+  color: #f5f0e8;
+  opacity: 1;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.site-footer {
+  padding: 2.5rem 0;
+  margin-top: 5rem;
+}
+
+.site-footer p {
+  font-size: 0.8rem;
+  color: #4a4540;
+  text-align: center;
+}
+
+/* ===========================
+   DIVIDER
+=========================== */
+hr, .divider {
+  border: none;
+  border-top: 1px solid #2a2520;
+  margin: 2.5rem 0;
+}
+
+/* ===========================
+   TYPOGRAPHY
+=========================== */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #f5f0e8;
+}
+
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.15rem; margin-bottom: 1rem; }
+h3 { font-size: 1rem; }
+
+p { margin-bottom: 1rem; color: #c9c3b8; }
+
+/* ===========================
+   HOME PAGE
+=========================== */
+.home-hero {
+  padding: 4rem 0 2.5rem;
+}
+
+.home-hero h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+  color: #f5f0e8;
+}
+
+.home-hero p {
+  font-size: 0.95rem;
+  color: #a09a90;
+  max-width: 480px;
+  margin-bottom: 0;
+}
+
+.home-section {
+  padding: 2rem 0;
+}
+
+.home-section h2 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #4a4540;
+  margin-bottom: 1rem;
+}
+
+.section-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #7ecaa0;
+}
+
+/* ===========================
+   BLOG & PROJECT LIST
+=========================== */
+.page-header {
+  padding: 3rem 0 1.5rem;
+}
+
+.page-header h1 {
+  font-size: 1.3rem;
+}
+
+.post-list {
+  list-style: none;
+}
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.6rem 0;
+  gap: 1rem;
+  border-bottom: 1px solid #1e1b18;
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item a {
+  font-size: 0.9rem;
+  color: #f5f0e8;
+  font-weight: 400;
+}
+
+.post-item a:hover {
+  color: #7ecaa0;
+  opacity: 1;
+}
+
+.post-date {
+  font-size: 0.8rem;
+  color: #4a4540;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===========================
+   SINGLE POST / PAGE
+=========================== */
+.single-post {
+  padding: 3rem 0;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  font-size: 0.8rem;
+  color: #4a4540;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #2a2520;
+}
+
+.post-content p {
+  font-size: 0.95rem;
+  color: #c9c3b8;
+  margin-bottom: 1.25rem;
+}
+
+.post-content h2 {
+  font-size: 1.1rem;
+  margin: 2rem 0 0.75rem;
+  color: #f5f0e8;
+}
+
+.post-content h3 {
+  font-size: 1rem;
+  margin: 1.5rem 0 0.5rem;
+  color: #f5f0e8;
+}
+
+.post-content a {
+  color: #7ecaa0;
+  border-bottom: 1px solid #7ecaa040;
+}
+
+.post-content a:hover {
+  border-bottom-color: #7ecaa0;
+  opacity: 1;
+}
+
+.post-content pre {
+  background: #1a1714;
+  border: 1px solid #2a2520;
+  padding: 1.25rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+  font-size: 0.85rem;
+}
+
+.post-content code {
+  font-size: 0.85rem;
+  background: #1a1714;
+  color: #7ecaa0;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+}
+
+.post-content pre code {
+  background: none;
+  color: #c9c3b8;
+  padding: 0;
+}
+
+.post-content blockquote {
+  border-left: 2px solid #7ecaa050;
+  padding-left: 1.25rem;
+  color: #7a7470;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+/* ===========================
+   ABOUT PAGE
+=========================== */
+.about-page {
+  padding: 3rem 0;
+}
+
+.about-page h1 {
+  margin-bottom: 2rem;
+}
+
+/* ===========================
+   PROJECT CARDS
+=========================== */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  padding: 1rem 0;
+  background: #1e1b18;
+}
+
+.project-card {
+  background: #12100e;
+  padding: 1.25rem;
+  transition: background 0.2s;
+  color: inherit;
+}
+
+.project-card:hover {
+  background: #1a1714;
+  opacity: 1;
+}
+
+.project-card h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  color: #f5f0e8;
+}
+
+.project-card p {
+  font-size: 0.85rem;
+  color: #7a7470;
+  margin-bottom: 0.75rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  background: #1e1b18;
+  color: #7ecaa0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  letter-spacing: 0.03em;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 640px) {
+  h1 { font-size: 1.4rem; }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .post-item {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+}
+
+/* ===========================
+   LIST STYLING
+=========================== */
+.post-content ul,
+.post-content ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.post-content ul li,
+.post-content ol li {
+  font-size: 0.95rem;
+  color: #c9c3b8;
+  margin-bottom: 0.4rem;
+  padding-left: 0.25rem;
+}
+
+/* ===========================
+   GARAPAN LIST
+=========================== */
+.garapan-grup {
+  padding: 2rem 0 0;
+}
+
+.garapan-grup-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: #4a4540;
+  margin-bottom: 0.75rem;
+}
+
+.garapan-item {
+  display: block;
+  padding: 1.25rem 0;
+  border-top: 1px solid #1e1b18;
+  color: inherit;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.garapan-item:last-child {
+  border-bottom: 1px solid #1e1b18;
+}
+
+.garapan-item:hover {
+  opacity: 1;
+}
+
+.garapan-item:hover .garapan-title {
+  color: #7ecaa0;
+}
+
+.garapan-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.garapan-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #f5f0e8;
+  transition: color 0.2s;
+}
+
+.garapan-badges {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.garapan-desc {
+  font-size: 0.85rem;
+  color: #a09a90;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.garapan-updated {
+  font-size: 0.75rem;
+  color: #4a4540;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* ===========================
+   BADGES
+=========================== */
+.badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.45rem;
+  border-radius: 2px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.badge-jenis {
+  background: #1f1a0e;
+  color: #ffef00 !important;
+}
+
+/* Status colors — warna berbeda per makna */
+.badge-aktif        { background: #0e1f16; color: #7fff00; }
+.badge-berjalan     { background: #0e1820; color: #7aabca; }
+.badge-eksperimen   { background: #1f1a0e; color: #c9a96e; }
+.badge-jeda         { background: #18151f; color: #9a8faa; }
+.badge-selesai      { background: #181614; color: #6a6460; }
+.badge-ditinggalkan { background: #1f1010; color: #8a5a5a; }
+
+/* ===========================
+   PUISI
+=========================== */
+.puisi-content {
+  font-family: 'Lora', serif;
+  font-style: bold;
+}
+
+.puisi-content p {
+  font-size: 0.95rem;
+  line-height: 1.1;
+  color: #c9c3b8;
+  margin-bottom: 0.75rem;
+}
+
+/* ===========================
+   NAV ICONS
+=========================== */
+.nav-icon {
+  width: 16px;
+  height: 16px;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+.nav-item {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  color: #a09a90;
+  font-size: 0.85rem;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  width: fit-content;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.nav-item:hover {
+  color: #f5f0e8;
+  border-color: #f5f0e8;
+  background: transparent;
+  opacity: 1;
+}
+
+/* ===========================
+   HOME
+=========================== */
+.home-opening {
+  padding: 4rem 0 2rem;
+}
+
+.home-quote {
+  font-family: 'Architects Daughter', cursive;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 0.5;
+  color: #f5f0e8;
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+}
+
+.home-intro {
+  font-family: 'DM Sans', cursive;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #a09a90;
+  margin-bottom: 0;
+}
+
+.home-nav-desc {
+  padding: 2rem 0;
+  border-top: 1px solid #1e1b18;
+}
+
+.home-nav-desc p {
+  font-size: 0.9rem;
+  color: #a09a90;
+  line-height: 1.8;
+}
+
+.home-nav-desc a {
+  color: #f5f0e8;
+  font-weight: 500;
+  border-bottom: 1px solid #2a2520;
+  transition: border-color 0.2s;
+}
+
+.home-nav-desc a:hover {
+  border-bottom-color: #7ecaa0;
+  opacity: 1;
+}
+
+/* ===========================
+   DENAH
+=========================== */
+.denah {
+  padding: 2rem 0 3rem;
+}
+
+.denah-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.denah-ruang {
+  position: relative;
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.denah-ruang:hover {
+  background: #1a1714;
+  opacity: 1;
+}
+
+.denah-ruang:hover .denah-label {
+  color: #7ecaa0;
+}
+
+/* Border sudut terbuka — seperti denah arsitektur */
+.denah-ruang::before,
+.denah-ruang::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+}
+
+/* Sudut kiri atas */
+.denah-ruang::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid #a09a90;
+  border-left: 1px solid #a09a90;
+}
+
+/* Sudut kanan bawah */
+.denah-ruang::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid #a09a90;
+  border-right: 1px solid #a09a90;
+}
+
+.denah-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f5f0e8;
+  margin-bottom: 0.6rem;
+  transition: color 0.2s;
+}
+
+.denah-ruang p {
+  font-family: 'DM Sans';
+  font-size: 0.7rem;
+  color: #e9f7f3;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Asimetris — Blog lebih besar */
+.denah-blog {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.denah-puisi {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.denah-garapan {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.denah-perihal {
+  grid-column: 1 / 3;
+  grid-row: 3;
+}
+
+@media (max-width: 640px) {
+  .denah-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .denah-blog,
+  .denah-puisi,
+  .denah-garapan,
+  .denah-perihal {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Garapan on Rahmadi</title>
+    <link>http://localhost:1313/garapan/</link>
+    <description>Recent content in Garapan on Rahmadi</description>
+    <generator>Hugo</generator>
+    <language>id</language>
+    <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/garapan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Website Pribadi</title>
+      <link>http://localhost:1313/garapan/project-blog/</link>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/garapan/project-blog/</guid>
+      <description>&lt;p&gt;Coba-coba Hugo website statis, bagian Projects/Garapan.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mentari Terbenam di Ujung Jalan</title>
+      <link>http://localhost:1313/garapan/fiksi-mentari-terbenam-di-ujung-jalan/</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/garapan/fiksi-mentari-terbenam-di-ujung-jalan/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

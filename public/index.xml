@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Rahmadi</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Rahmadi</description>
+    <generator>Hugo</generator>
+    <language>id</language>
+    <lastBuildDate>Wed, 12 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yang kau jumpai di kota ini</title>
+      <link>http://localhost:1313/puisi/yang-kau-jumpai-di-kota-ini/</link>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/puisi/yang-kau-jumpai-di-kota-ini/</guid>
+      <description>&lt;p&gt;Di kota ini tidak kau jumpai&lt;/p&gt;&#xA;&lt;p&gt;surga atau apapun yang menanti.&lt;/p&gt;&#xA;&lt;p&gt;Hari-hari sekarat dilahap riuh dan sunyi.&lt;/p&gt;&#xA;&lt;p&gt;Merajut waktu dengan kepingan rindu,&lt;/p&gt;&#xA;&lt;p&gt;menumpuk pilu satu demi satu,&lt;/p&gt;&#xA;&lt;p&gt;membakarnya menjadi abu.&lt;/p&gt;&#xA;&lt;p&gt;Kita sudah akrab dengan semerbak asap&lt;/p&gt;&#xA;&lt;p&gt;dan terik menyengat,&lt;/p&gt;&#xA;&lt;p&gt;yang baunya tak mampu&lt;/p&gt;&#xA;&lt;p&gt;menghalau pintu lorong waktu,&lt;/p&gt;&#xA;&lt;p&gt;yang panasnya tak kuasa&lt;/p&gt;&#xA;&lt;p&gt;menghadang gerbang masa mendatang.&lt;/p&gt;&#xA;&lt;p&gt;Di kota bernama “kehidupan” ini,&lt;/p&gt;&#xA;&lt;p&gt;takdir terus berjalan, dan menggilas&lt;/p&gt;&#xA;&lt;p&gt;laksana roda gilingan, dan kita&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Website Pribadi</title>
+      <link>http://localhost:1313/garapan/project-blog/</link>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/garapan/project-blog/</guid>
+      <description>&lt;p&gt;Coba-coba Hugo website statis, bagian Projects/Garapan.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mentari Terbenam di Ujung Jalan</title>
+      <link>http://localhost:1313/garapan/fiksi-mentari-terbenam-di-ujung-jalan/</link>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/garapan/fiksi-mentari-terbenam-di-ujung-jalan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post Pertama</title>
+      <link>http://localhost:1313/blog/post-pertama/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/post-pertama/</guid>
+      <description>&lt;p&gt;Ini adalah post pertamaku. Hugo sudah berjalan dengan baik!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Perihal Saya</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Orang yang namanya pasaran harus menghadapi satu ujian hidup tambahan: berebut pamor agar ketika khalayak menyebut nama itu, yang terlintas di benak mereka adalah dirinya seorang.&lt;/p&gt;&#xA;&lt;p&gt;Kalau kebetulan kamu punya nama yang sama persis dengan seorang figur publik, kamu kalah &lt;em&gt;start&lt;/em&gt;. Tapi belum tentu kalah &lt;em&gt;finish&lt;/em&gt;. Kalau namamu pasaran tetapi belum ada figur publik yang menyamainya, kesempatanmu masih terbuka lebar. Dan nama saya, Arya Rahmadi, termasuk yang kedua.&lt;/p&gt;&#xA;&lt;p&gt;Indikator paling sederhana untuk melihat siapa yang sedang unggul adalah lewat hasil penelusuran Google.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

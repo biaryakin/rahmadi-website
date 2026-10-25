@@ -1,0 +1,14 @@
+baseURL = "https://example.com/"
+languageCode = "id"
+title = "Rahmadi"
+
+[params]
+  description = "Blog dan portofolio pribadi"
+  author = "Rahmadi"
+  quote = "Selamat datang !"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
