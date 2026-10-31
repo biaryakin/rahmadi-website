@@ -33,7 +33,7 @@ Ihwal lain yang cukup disampaikan secara singkat:
 + Semua manusia sama derajatnya di hadapan saya. Tidak berlaku untuk yang lupa bayar utang.
 
 
-Saya bisa dihubungi melalui [Instagram](instagram.com/rahmadi.1012). Mohon tidak mengirim gambar yang tidak senonoh.
+Saya bisa dihubungi melalui [Instagram](https://www.instagram.com/rahmadi.1012). Mohon tidak mengirim gambar yang tidak senonoh.
 
 *****
 
