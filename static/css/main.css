@@ -8,7 +8,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: clamp(16px, 1.46vw, 22px);
   scroll-behavior: smooth;
 }
 
@@ -45,7 +45,7 @@ img {
    CONTAINER
 =========================== */
 .container {
-  max-width: 600px;
+  max-width: 38rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -568,8 +568,8 @@ p { margin-bottom: 1rem; color: #c9c3b8; }
    NAV ICONS
 =========================== */
 .nav-icon {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   image-rendering: pixelated;
   flex-shrink: 0;
 }
